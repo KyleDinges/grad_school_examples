@@ -6,5 +6,5 @@ SELECT customerFirstName, totalCost FROM (
         LEFT JOIN orders AS o
         ON c.customerID = o.customerID
         GROUP BY customerID, customerFirstName)
-ORDER BY totalCost
+ORDER BY totalCost DESC
 LIMIT 5
